@@ -1,0 +1,592 @@
+@charset "utf-8";
+
+/* logo */
+
+.logo {
+  width: 120px;
+}
+
+/* article-add */
+
+.hide-a {
+  display: none;
+}
+
+.hide-up {
+  display: block;
+}
+
+.button-area {
+  position: relative;
+}
+
+.on-button {
+  position: absolute;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 28%;
+  left: 28%;
+  background-color: rgb(121, 235, 255);
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  width: 44%;
+  height: 44%;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: inset 0 -3px 3px;
+}
+
+.on-button:hover {
+  transform: scale(1.05);
+}
+
+.on-button:active {
+  transform: scale(0.95);
+}
+
+.paper-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px 2px rgb(126, 126, 126), 2px -2px 2px rgb(126, 126, 126), 
+              -2px 2px 2px rgb(126, 126, 126), -2px -2px 2px rgb(126, 126, 126);
+}
+
+.rotate {
+  transition: all 2s ease;
+  transform: rotateY(90deg);
+  box-shadow: none;
+}
+
+.pickup5-none {
+  display: none;
+}
+
+/* word-system */
+
+.main article {
+  position: relative;
+}
+
+.text-area {
+  position: relative;
+  margin-top: 10px;
+}
+
+.cover-p {
+  padding: 0 40px 30px 40px;
+  opacity: 0;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.mes {
+  position: sticky;
+  top: 25px;
+  z-index: 11;
+}
+
+.text1 {
+  height: 2300px;
+}
+
+.text2 {
+  height: 1620px;
+}
+
+.text3 {
+  height: 900px;
+}
+
+/* move */
+
+.move .keyy {
+  transition: all 3s ease;
+  transform: translateX(300px);
+}
+
+.gate {
+  position: relative;
+}
+
+.gole-gate {
+  display: inline-block;
+  width: 74%;
+  height: 60%;
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  z-index: -10;
+}
+
+.gole-a,
+.rock-box {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  width: 74%;
+  height: 60%;
+  z-index: 0;
+}
+
+.rock-box {
+  z-index: 20;
+}
+
+.gole-a a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.gole-link,
+.rock-box-on {
+  display: block;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  opacity: 0;
+  background-color: red;
+}
+
+.cover-none {
+  display: none;
+}
+
+/* message */
+.message {
+  position: fixed;
+  /* top: 250px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  max-width: 80%;
+  min-height: 100px;
+  padding: 10px;
+  background-color: rgba(161, 255, 255, 0.95);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 5px;
+  z-index: 20;
+  display: none;
+}
+
+.navi {
+  background-color: rgba(74, 209, 250, 0.95);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.navi::before {
+  content: '［ナビ］';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 1rem;
+  color: blue;
+}
+
+.you::before {
+  content: '［あなた］';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-size: 1rem;
+  color: blue;
+}
+
+.messe {
+  padding: 15px 0;
+}
+
+
+.mess-none {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mess-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-title {
+  position: relative;
+}
+
+.system-line {
+  position: absolute;
+  top: 20px;
+  left: calc(40px + 15.5rem);
+  background-color: #ffffff;
+  display: none;
+}
+
+.system-box {
+  position: relative;
+  height: 1.5rem;
+  width: 7rem;
+  border: 3px solid blue;
+  border-radius: 2.5px;
+  border-bottom: 0; 
+}
+
+.system-box::before {
+  content: 'ワードフィルター';
+  font-size: 1px;
+  position: absolute;
+  top: -16px;
+  left: 14px;
+  color: blue;
+}
+
+.system-arrow {
+  position: absolute;
+  top: -12px;
+  left: 120px;
+  color: blue;
+}
+
+.system-line-on {
+  display: block;
+}
+
+/* hide-button */
+
+.hide-button {
+  width: 9%;
+  height: 8%;
+  position: absolute;
+  top: 34%;
+  left: 40%;
+  display: none;
+}
+
+.hide-button-on {
+  display: block;
+}
+
+.button-set {
+  position: relative;
+}
+
+.invi {
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+/* list-pass */
+
+.archive-list li p {
+  cursor: pointer;
+}
+
+.archive-list li p:hover {
+  color: #8f8f8f;
+}
+
+.archive-list li p:active {
+  color: blue;
+}
+
+/* push-btn */
+
+.push-btn {
+  position: absolute;
+  top: 15px;
+  right: 4%;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.push-btn a {
+  display: block;
+}
+
+.push-btn:hover {
+  top: 14px;
+  box-shadow: 0 4px;
+}
+
+.push-btn:active {
+  top: 18px;
+  box-shadow: none;
+}
+
+.start-btn {
+  background-color: rgb(121, 235, 255);
+}
+
+.start-btn-none {
+  display: none;
+}
+
+.restart-btn {
+  background-color: rgb(255, 176, 183);
+  display: none;
+}
+
+.restart-btn-block {
+  display: block;
+}
+
+.back-btn {
+  background-color: rgb(217, 255, 161);
+}
+
+.google-btn {
+  right: calc(4% + 120px);
+  background-color: rgb(255, 91, 91);
+}
+
+/* flow-words */
+
+.profile-area {
+  position: relative;
+}
+
+.flow-words {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.flow-words-on {
+  display: flex;
+}
+
+.flow-word {
+  width: 33.4%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  opacity: 0;
+  cursor: default;
+}
+
+.flow-on {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+/* key */
+
+.key-img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+  background-image: url(../img/small-rock.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.author-img1 {
+  background-image: url(../img/author-img1.png);
+}
+
+.author-img2 {
+  background-image: url(../img/author-img2.png);
+}
+
+.author-img3 {
+  background-image: url(../img/author-img3.png);
+}
+
+.enter {
+  transition: all 1s ease;
+}
+
+.key {
+  position: absolute;
+  top: 10px;
+  right: 20%;
+  width: 50px;
+  line-height: 1px;
+  display: none;
+}
+
+.key-on {
+  display: block;
+}
+
+.key-hide {
+  display: none;
+}
+
+.key-hide-on {
+  display: block;
+}
+
+.get-key {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.get-key-none {
+  display: none;
+}
+
+/* all */
+
+.mess-none a {
+  display: block;
+}
+
+body {
+  position: relative;
+}
+
+.all-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: none;
+  /* transition: all 2s ease; */
+}
+
+.cover-invi {
+  opacity: 0;
+}
+
+.exit {
+  transform: skew(90deg, -90deg);
+  /* transform: skew(90deg, 90deg); */
+  width: 50px;
+  box-shadow: 0 0 100px white;
+}
+
+.exit-up {
+  transition: all 3s ease;
+  transform: skew(0deg, 0deg);
+}
+
+/* key-select */
+
+.btn-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  display: none;
+}
+
+.key-select {
+  width: 600px;
+  max-width: 60%;
+  min-height: 100px;
+  padding: 20px;
+  background-color: rgba(246, 255, 161, 0.95);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(251, 255, 0);
+  border-radius: 5px;
+}
+
+.two-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px
+}
+
+.btns {
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btns:hover {
+  transform: scale(1.2);
+}
+
+/* all */
+
+.twitter {
+  position: relative;
+}
+
+.twitter-cover {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 315px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  z-index: 1;
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.all-hide {
+  overflow: hidden;
+}
+
+.mess-top {
+  z-index: 30;
+}
+
+.message {
+  padding: 10px 25px;
+}
