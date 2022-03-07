@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>webゲーム</title>
+  <meta name="description" content="webゲーム">
+  <meta name="viewport" content="width=device-width">
+  <script src="./js/all-end.js"></script>
+  <script src="./js/img-move.js"></script>
+  <script src="./js/word-system.js"></script>
+  <script src="./js/gole-gate-mess-off.js"></script>
+  <script src="./js/article-trade-mess-off.js"></script>
+  <script src="./js/gole-gate-mess-on.js"></script>
+  <script src="./js/rotate-img.js"></script>
+  <script src="./js/article-trade.js"></script>
+  <script src="./js/word-system-mess-off.js"></script>
+  <script src="./js/push-btn.js"></script>
+  <script src="./js/start-mess-off.js"></script>
+  <script src="./js/flow-words.js"></script>
+  <script src="./js/key-img.js"></script>
+  <script src="./js/key-off.js"></script>
+  <script src="./js/get-key-mess-off.js"></script>
+  <link rel="shortcut icon" href="./img/takarabako.png">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/game.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body class="body">
+  <header class="header">
+    <h1 class="site-title wrapper">
+      <a href="#"><img class="logo" src="./img/logo.png" alt="Travel Blog"></a>
+      <div class="system-line">
+        <div class="system-box"></div>
+        <div class="system-arrow">↓</div>
+      </div>
+    </h1>
+    <nav class="nav">
+      <ul class="nav-list wrapper">
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">HOTEL</a></li>
+        <li><a href="#">NATURE</a></li>
+        <li><a href="#">SEA</a></li>
+        <li><a href="#">FOOD</a></li>
+      </ul>
+    </nav>
+    <div class="start-btn push-btn">スタート</div>
+    <div class="restart-btn push-btn"><a href="./index.html">リセット</a></div>
+    <div class="key"><img src="./img/key no.png" alt="鍵"></div>
+  </header>
+  <div class="pickup">
+    <article>
+      <img src="./img/pickup1.png" alt="ピックアップ画像1">
+      <h2 class="article-title">緑豊かな島にある、綺麗な海に囲まれた水上の解放感のある宿</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article>
+      <img src="./img/pickup2.png" alt="ピックアップ画像2">
+      <h2 class="article-title">世界中から多くの観光客が足を運ぶ、一面透き通った美しい海</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article>
+      <img src="./img/pickup3.png" alt="ピックアップ画像3">
+      <h2 class="article-title">国立公園の中にある湖は、晴れた日に水面に反射する山々が綺麗な絶景の場所</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article>
+      <img src="./img/pickup4.png" alt="ピックアップ画像4">
+      <h2 class="article-title">どの部屋からも絶景の海が見渡せる海沿いにある人気の高いホテル</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article class="pickup5">
+      <img src="./img/pickup5.png" alt="ピックアップ画像5">
+      <h2 class="article-title">船でしか来ることができないこの島は、ゆっくりくつろぐのに最適な秘密のリゾート</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article class="hide-a">
+      <div class="button-area">
+        <img src="./img/white.png" alt="ホワイト">
+        <div class="on-button">ON</div>
+        <img class="paper-img rotate-key" src="./img/pickup5.png" alt="はがれる画像">
+      </div>
+      <h2 class="article-title">船でしか来ることができないこの島は、ゆっくりくつろぐのに最適な秘密のリゾート</h2>
+      <div class="read-more"><a href="#">READ MORE</a></div>
+    </article>
+    <article class="key-hide">
+      <div class="button-area">
+        <img src="./img/white.png" alt="ホワイト">
+        <img class="get-key" src="./img/key.png" alt="鍵">
+      </div>
+    </article>
+  </div>
+  <div class="container wrapper">
+    <main class="main">
+      <article>
+        <h2 class="article-title">自然が作り出した美しい滝と澄み渡る青色の湖</h2>
+        <ul class="meta">
+          <li>2022/02/24</li>
+          <li>NATURE</li>
+        </ul>
+        <img src="./img/main1.png" alt="メイン画像1">
+        <div class="text-area">
+          <p class="cover-p">
+            この場所に訪れたすべての人はその滝を眺めているだけで心が癒されます。適度な高さの滝と澄んだ池は、雄大な自然とその美しさによりとても神秘的な景色を作り出し、滝の音はストレスに大きな効果をもたらします。</p>
+          <p class="text text1">この場所に訪れたすべての人はその滝<span class="mes1">を</span>眺め<span
+              class="mes2">て</span>いるだけで心が癒されます。適度な高さの滝と澄んだ池は、雄大な自然とその美しさによりとても神秘的な景色を作り出し、滝の音はストレスに大きな効果をもたらします。</p>
+        </div>
+        <div class="read-more"><a href="#">READ MORE</a></div>
+      </article>
+      <article>
+        <h2 class="article-title">屋内プール付き！ホテルの中にあるおしゃれなレストラン</h2>
+        <ul class="meta">
+          <li>2022/02/05</li>
+          <li>HOTEL</li>
+        </ul>
+        <img src="./img/main2.png" alt="メイン画像2">
+        <div class="text-area">
+          <p class="cover-p">
+            このホテルの最上階の一角では、夕方におしゃれなレストランが開店がオープンし、特別な夜を満喫するために多くの客が来店します。屋内プールが併設されており、子供が遊んでいる間に大人はゆっくり休むことができます。</p>
+          <p class="text text2">このホテルの最上階の一角では、<span class="mes3">夕</span>方に<span
+              class="mes4">お</span>しゃれなレストランが開店がオープンし、特別な夜を満喫するために多くの客が来店します。屋内プールが併設されており、子供が遊んでいる間に大人はゆっくり休むことができます。
+          </p>
+        </div>
+        <div class="read-more"><a href="#">READ MORE</a></div>
+      </article>
+      <article>
+        <h2 class="article-title">家族でくつろげる国営公園内の大きなプール</h2>
+        <ul class="meta">
+          <li>2022/01/18</li>
+          <li>NATURE</li>
+        </ul>
+        <div class="button-set">
+          <img src="./img/main3.png" alt="メイン画像3">
+          <div class="hide-button"></div>
+        </div>
+        <div class="text-area">
+          <p class="cover-p">
+            国営公園の中にある市民プールは毎日営業しており、毎年夏には多くの子供が遊びに来ます。たくさんのイスが設置されているため保護者はくつろぎながら子供たちを見守ることができ安心です。また、遊具の貸出も行っています。</p>
+          <p class="text text3">国営公園の中にある市民プールは毎<span class="mes5">日</span>営業<span
+              class="mes6">し</span>ており、毎年夏には多くの子供が遊びに来ます。たくさんのイスが設置されているため保護者はくつろぎながら子供たちを見守ることができ安心です。また、遊具の貸出も行っています。
+          </p>
+        </div>
+        <div class="read-more"><a href="#">READ MORE</a></div>
+      </article>
+    </main>
+    <aside class="aside">
+      <section class="author">
+        <div class="key-img author-img1"></div>
+        <h3 class="side-title">Kal</h3>
+        <div class="profile-area">
+          <p class="profile">
+            旅行とバイトを繰り返している大学3年生。最近では国内だけでなく海外へも旅行へ行っており、行く先で写真を撮るのが趣味になっている。日本国内では今までに全ての地域に行っており、海外へはヨーロッパを中心に旅行をしている。
+          </p>
+          <div class="flow-words">
+            <div class="flow-word flow1">
+              <p>[1]<br>21.05</p>
+            </div>
+            <div class="flow-word flow2">
+              <p>[2]<br>22.03</p>
+            </div>
+            <div class="flow-word flow3">
+              <p>[3]<br>21.10</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ranking">
+        <h3 class="side-title">Select</h3>
+        <article>
+          <img src="./img/ranking1.png" alt="ランキング画像1">
+          <h4 class="article-title">ホテルの中に併設された緑豊かなこの広場は体を休めるのに最適な場所
+          </h4>
+        </article>
+        <article class="gate trick">
+          <img class="move-point" src="./img/ranking2.png" alt="ランキング画像2">
+          <h4 class="article-title">ルームサービスが充実している落ち着いた雰囲気のあるホテル
+          </h4>
+          <img class="gole-gate" src="./img/takarabako.png" alt="宝箱">
+          <div class="gole-a"></div>
+          <div class="rock-box"></div>
+          <div class="cover"></div>
+        </article>
+        <article>
+          <img src="./img/ranking3.png" alt="ランキング画像3">
+          <h4 class="article-title">夏にのみ営業している多くの住民が集まるシンプルな作りのプール
+          </h4>
+        </article>
+      </section>
+      <section class="archive">
+        <h3 class="side-title">Archive</h3>
+        <ul class="archive-list">
+          <li>
+            <p class="pass2 miss1">2022年03月(XX)</p>
+          </li>
+          <li>
+            <p class="miss13">2022年02月(XX)</p>
+          </li>
+          <li>
+            <p class="miss14">2022年01月(XX)</p>
+          </li>
+          <li>
+            <p class="miss3">2021年12月(XX)</p>
+          </li>
+          <li>
+            <p class="miss4">2021年11月(XX)</p>
+          </li>
+          <li>
+            <p class="pass3 miss2">2021年10月(XX)</p>
+          </li>
+          <li>
+            <p class="miss5">2021年09月(XX)</p>
+          </li>
+          <li>
+            <p class="miss6">2021年08月(XX)</p>
+          </li>
+          <li>
+            <p class="miss7">2021年07月(XX)</p>
+          </li>
+          <li>
+            <p class="miss8">2021年06月(XX)</p>
+          </li>
+          <li>
+            <p class="pass1">2021年05月(XX)</p>
+          </li>
+          <li>
+            <p class="miss9">2021年04月(XX)</p>
+          </li>
+          <li>
+            <p class="miss10">2021年03月(XX)</p>
+          </li>
+          <li>
+            <p class="miss11">2021年02月(XX)</p>
+          </li>
+          <li>
+            <p class="miss12">2021年01月(XX)</p>
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <div class="first-mess message navi mess-on">
+    <div class="mess-none none-btn-first">✕</div>
+    <div class="messe">
+      ウェブ脱出ゲーム［旅ブログ編］へようこそ！<br>まずはこのウェブページを探索してみよう！<br>メニューや記事を押しても違うページには飛ばないよ！<br>始めるときはスタートボタンを押してね！<br>※スタートしないと何も変化しないよ<br>※一番下（フッター）はギミックなし
+    </div>
+  </div>
+  <div class="start-mess message navi">
+    <div class="mess-none none-btn-start">✕</div>
+    <div class="messe">あなたはこのウェブページに閉じ込められた！<br>このウェブページから脱出しよう！！<br>【最初のヒントはプロフィールだよ！】<br>初めからやり直したい場合はリセットボタンを押してね。</div>
+  </div>
+  <div class="article-trade-mess message">
+    <div class="mess-none none-btn-trade">✕</div>
+    <div class="messe">右上の方で何かが外れたみたい！</div>
+  </div>
+  <div class="word-system-mess message">
+    <div class="mess-none none-btn-system">✕</div>
+    <div class="messe">上に何か現れた! なんだろう？</div>
+  </div>
+  <div class="gole-gate-mess message">
+    <div class="mess-none none-btn-gole">✕</div>
+    <div class="messe">ベッドが動くようになった…!</div>
+  </div>
+  <div class="rock-mess message">
+    <div class="mess-none none-btn-rock">✕</div>
+    <div class="messe">鍵がかかってる…鍵はどこだろう？</div>
+  </div>
+  <div class="get-key-mess message">
+    <div class="mess-none none-btn-key">✕</div>
+    <div class="messe">何かの鍵を手に入れた！</div>
+  </div>
+  <div class="open-mess message">
+    <div class="mess-none none-btn-open"><a href="./gole.html">✕</a></div>
+    <div class="messe">鍵を挿すのと同時に鍵が消滅し、<br>宝箱の鍵が開いた！</div>
+  </div>
+  <div class="hole-mess message">
+    <div class="mess-none none-btn-hole">✕</div>
+    <div class="messe">これは鍵穴か…？</div>
+  </div>
+  <div class="unrock-mess message mess-top">
+    <div class="mess-none none-btn-unrock">✕</div>
+    <div class="messe">鍵がはまった！！</div>
+  </div>
+  <div class="cant-mess message navi">
+    <div class="mess-none none-btn-cant">✕</div>
+    <div class="messe">ごめんなさい💦<br>このウェブ脱出ゲームは<br>ご利用の端末には対応していません<br>デザインだけでも見ていってください！</div>
+  </div>
+  <div class="btn-cover gole-key">
+    <div class="key-select">
+      <p>宝箱に鍵を使う？</p>
+      <div class="two-btn">
+        <div class="btns gole-yes">はい</div>
+        <div class="btns gole-no">いいえ</div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-cover end-key">
+    <div class="key-select">
+      <p>謎の鍵穴に鍵を使う？</p>
+      <div class="two-btn">
+        <div class="btns end-yes">はい</div>
+        <div class="btns end-no">いいえ</div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="contents wrapper">
+      <section class="item">
+        <h3 class="footer-title">Category</h3>
+        <ul class="menu-list">
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">HOTEL</a></li>
+          <li><a href="#">NATURE</a></li>
+          <li><a href="#">SEA</a></li>
+          <li><a href="#">FOOD</a></li>
+        </ul>
+      </section>
+      <section class="item">
+        <h3 class="footer-title">About</h3>
+        <p>旅行とバイトを繰り返している大学3年生。最近では国内だけでなく海外へも旅行へ行っており、行く先で写真を撮るのが趣味になっている。日本国内では今までに全ての地域に行っており、海外へはヨーロッパを中心に旅行をしている。
+        </p>
+        <ul class="about-list">
+          <li><a href="#" class="arrow">プロフィール詳細</a></li>
+          <li><a href="#" class="arrow">お仕事の依頼</a></li>
+          <li><a href="#" class="arrow">お問い合わせ</a></li>
+        </ul>
+      </section>
+      <section class="item twitter">
+        <h3 class="footer-title">Twitter</h3>
+        <a class="twitter-timeline" data-height="315" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by
+          TwitterJP</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="twitter-cover">利用停止中</div>
+      </section>
+    </div>
+    <p class="copyright">&copy; Kal Games</p>
+  </footer>
+  <div class="all-cover">
+    <!-- <div class="exit"><img src="./img/exit.png" alt="出口"></div> -->
+    <a href="./end.html"><img class="exit" src="./img/exit.png" alt="出口"></a>
+  </div>
+</body>
+
+</html>
