@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.main {
+  background-image: url(../img/tresure.png);
+  background-position: center -10vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gole-mess {
+  position: absolute;
+  display: block;
+  /* position: relative;
+  padding: 20px;
+  background-color: rgba(255, 238, 0, 0.5);
+  border: 1px solid gold;
+  border-radius: 10%; */
+}
+
+.gole-mess-none {
+  display: none;
+}
+
+.mess-none {
+  font-size: 30px;
+  top: 10px;
+  right: 15px;
+  text-shadow: none;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+/* end */
+
+.end-main {
+  background-image: url(../img/google.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.end-gole-mess {
+  background-color: rgb(222, 250, 190, 0.9);
+  border: 2px solid rgb(0, 255, 85);
+  display: none;
+}
+
+.end-first-mess {
+  display: none;
+}
+
+/* .white-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.white-cover-off {
+  transition: all 2s ease;
+  opacity: 0;
+} */
+
+.mess-on {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
